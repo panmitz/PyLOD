@@ -610,6 +610,7 @@ class PyLOD:
                             SELECT DISTINCT (?instance AS ?uri)
                             WHERE {
                                  ?instance %s %s .
+                                 ?instance rdf:type owl:NamedIndividual .
                             }
                           """ % (predicate, cls,),
                     limit_per_endpoint=limit_per_endpoint)
@@ -691,7 +692,5 @@ class PyLOD:
 if __name__ == '__main__':
     print("Please visit www.doc.com for usage instructions.")
 
-    # lo = PyLOD(endpoint_dictionary=None)
-    # lab = lo.expose.labels("dbo:Artist", language="", limit_per_endpoint=10)
-    # print json.dumps(lab, indent=3)
+
 
