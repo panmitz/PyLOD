@@ -2,7 +2,7 @@
 PyLOD - A Python wrapper for exposing Linked Open Data from public SPARQL-served endpoints.
 Version 0.1
 
-Documentation:
+Documentation: TBA
 
 Created by Panos Mitzias (http://www.pmitzias.com), Efstratios Kontopoulos (http://www.stratoskontopoulos.com)
 Powered by CERTH/MKLab (http://mklab.iti.gr)
