@@ -9,7 +9,6 @@ Powered by CERTH/MKLab (http://mklab.iti.gr)
 """
 
 from SPARQLWrapper import SPARQLWrapper, JSON
-import json
 import re
 import sys
 
@@ -630,14 +629,6 @@ class PyLOD:
                 # Check if a language tag is selected
                 if language is not None and self.pylod.is_valid_string(language):
                     language_filter = "FILTER (LANG(?label) = '%s')" % (language,)
-
-                print """
-                            SELECT DISTINCT ?label
-                            WHERE {
-                                 %s rdfs:label ?label .
-                                 %s
-                            }
-                          """ % (entity, language_filter,)
 
                 # Execute query
                 return self.pylod.sparql.execute_select_to_all_endpoints(
