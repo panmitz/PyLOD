@@ -2,7 +2,6 @@
 PyLOD is a Python wrapper for exposing Linked Open Data from public SPARQL-served endpoints. It acts as an abstraction layer for the retrieval of structured data, such as classes, properties and individuals, without requiring any knowledge of SPARQL.
 
 ## Getting Started
-
 PyLOD is a minimal module for Python 2.x. Support for Python 3.x will be tested and added soon.
 
 ### Prerequisites
@@ -21,7 +20,6 @@ PyLOD is a minimal module for Python 2.x. Support for Python 3.x will be tested 
   Installation from PyPi will be added soon. 
 
 ## Usage
-
 **1. Import the PyLOD class and create a PyLOD class object.**
 ```python
 from PyLOD import PyLOD
@@ -92,15 +90,20 @@ instances = pylod.expose.instances_of_class(cls="dbo:Artist", include_subclasses
 * __is_active_endpoint()__ - Checks if a given endpoint URL is alive and responds to SPARQL queries
 
 ## Documentation
-
 The detailed docs will be added soon.
 
 ## Authors
-
 * [Panos Mitzias](http://pmitzias.com) - Design and development
 * [Stratos Kontopoulos](http://stratoskontopoulos.com) - Contribution to the design
 
 ## Powered by
-
 * [Centre for Research & Technology Hellas - CERTH](https://www.certh.gr/root.en.aspx)
 * [Multimedia Knowledge & Social Media Analytics Laboratory - MKLab](http://mklab.iti.gr/)
+
+## Applications
+PyLOD has been deployed in the following projects:
+
+* [PERICLES](http://project-pericles.eu/)
+* [ROBORDER](http://roborder.eu/)
+* [TENSOR](https://tensor-project.eu/)
+* [SUITCEYES](http://suitceyes.eu/)
