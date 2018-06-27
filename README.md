@@ -17,9 +17,9 @@ PyLOD is a minimal module for Python (2.x. and 3.x).
 
 * #### From PyPi
 
-  ```
-  pip install PyLOD
-  ```
+ ```
+ pip install PyLOD
+ ```
 
 ## Usage
 **1. Import the PyLOD class and create a PyLOD class object.**
