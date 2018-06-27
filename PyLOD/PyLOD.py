@@ -609,7 +609,6 @@ class PyLOD:
                             SELECT DISTINCT (?instance AS ?uri)
                             WHERE {
                                  ?instance %s %s .
-                                 ?instance rdf:type owl:NamedIndividual .
                             }
                           """ % (predicate, cls,),
                     limit_per_endpoint=limit_per_endpoint)
@@ -681,7 +680,7 @@ class PyLOD:
         return False
 
 if __name__ == '__main__':
-    print("Please visit www.doc.com for usage instructions.")
+    print("Please visit https://github.com/panmitz/PyLOD for usage instructions.")
 
 
 

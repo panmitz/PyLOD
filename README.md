@@ -2,7 +2,7 @@
 PyLOD is a Python wrapper for exposing Linked Open Data from public SPARQL-served endpoints. It acts as an abstraction layer for the retrieval of structured data, such as classes, properties and individuals, without requiring any knowledge of SPARQL.
 
 ## Getting Started
-PyLOD is a minimal module for Python 2.x. Support for Python 3.x will be tested and added soon.
+PyLOD is a minimal module for Python (2.x. and 3.x).
 
 ### Prerequisites
 
@@ -17,7 +17,9 @@ PyLOD is a minimal module for Python 2.x. Support for Python 3.x will be tested 
 
 * #### From PyPi
 
-  Installation from PyPi will be added soon. 
+  ```
+  pip install PyLOD
+  ```
 
 ## Usage
 **1. Import the PyLOD class and create a PyLOD class object.**
