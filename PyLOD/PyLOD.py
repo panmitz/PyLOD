@@ -2,7 +2,8 @@
 PyLOD - A Python wrapper for exposing Linked Open Data from public SPARQL-served endpoints.
 Version 0.1
 
-Documentation: TBA
+Official webpage: http://pmitzias/PyLOD
+Documentation: http://pmitzias/PyLOD/docs.html
 
 Created by Panos Mitzias (http://www.pmitzias.com), Efstratios Kontopoulos (http://www.stratoskontopoulos.com)
 Powered by CERTH/MKLab (http://mklab.iti.gr)
@@ -614,6 +615,14 @@ class PyLOD:
                     limit_per_endpoint=limit_per_endpoint)
 
             def labels(self, entity, language=None, limit_per_endpoint=None):
+                """
+                Exposes the labels of entities. Optionally, a language tag can be defined.
+                :param entity: The URI of entity to retrieve its labels
+                :param language: Optional language parameter as defined in BCP 47.
+                :param limit_per_endpoint: Optional argument (integer) to limit query results per endpoint.
+                :return: The query results as a dictionary (JSON format).
+                """
+
                 # Validate given argument
                 if self.pylod.is_valid_string(entity):
                     if self.pylod.is_url(entity):
@@ -680,7 +689,7 @@ class PyLOD:
         return False
 
 if __name__ == '__main__':
-    print("Please visit https://github.com/panmitz/PyLOD for usage instructions.")
+    print("Please visit http://pmitzias/PyLOD/docs.html for usage instructions.")
 
 
 

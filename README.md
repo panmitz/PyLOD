@@ -69,6 +69,9 @@ sub_classes = pylod.expose.sub_classes(super_class="dbo:Artist")
 
 # Get instances of a specific class 
 instances = pylod.expose.instances_of_class(cls="dbo:Artist", include_subclasses=True, limit_per_endpoint=50)
+
+# Execute custom SPARQL select query to all endpoints
+results = pylod.sparql.execute_select_to_all_endpoints(query="SELECT * WHERE {?s ?p ?o}")
 ```
 
 ### Expose functions:
@@ -92,7 +95,7 @@ instances = pylod.expose.instances_of_class(cls="dbo:Artist", include_subclasses
 * __is_active_endpoint()__ - Checks if a given endpoint URL is alive and responds to SPARQL queries
 
 ## Documentation
-The detailed docs will be added soon.
+[The official documents](http://pmitzias.com/PyLOD/docs.html)
 
 ## Authors
 * [Panos Mitzias](http://pmitzias.com) - Design and development
