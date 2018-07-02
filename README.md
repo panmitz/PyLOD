@@ -95,7 +95,7 @@ results = pylod.sparql.execute_select_to_all_endpoints(query="SELECT * WHERE {?s
 * __is_active_endpoint()__ - Checks if a given endpoint URL is alive and responds to SPARQL queries
 
 ## Documentation
-[The official documents](http://pmitzias.com/PyLOD/docs.html)
+[The official webpage](http://pmitzias.com/PyLOD) - [The Docs](http://pmitzias.com/PyLOD/docs.html)
 
 ## Authors
 * [Panos Mitzias](http://pmitzias.com) - Design and development
