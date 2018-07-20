@@ -48,6 +48,8 @@ class PyLOD:
                 # If a user-defined endpoint dictionary was given as argument
                 elif isinstance(endpoint_dictionary, dict):
 
+                    self.dictionary = {}
+
                     # For each given endpoint
                     for key in endpoint_dictionary:
                         try:
